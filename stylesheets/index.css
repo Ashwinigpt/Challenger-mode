@@ -1,0 +1,488 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* General css */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1100;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.logo {
+    width: 5vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(172, 178, 195);
+    margin-right: 1rem;
+    font-weight: 600;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    background-color: rgb(27, 33, 44);
+    padding: 0.5rem 0;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+.search-box input {
+    height: 6vh;
+    width: 25vw;
+    border-radius: .6rem;
+    border: 2.5px rgb(53, 60, 77) solid;
+    background-color: rgb(21, 27, 36);
+}
+
+.search-box {
+    margin-right: 7rem;
+}
+
+.btn button {
+    padding: .7rem 2rem;
+    margin-right: 1rem;
+    border-radius: 6rem;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(39, 47, 63);
+}
+
+.btn .sign {
+    background-color: rgb(55, 178, 202);
+}
+
+.flex li a:hover {
+    color: #fff;
+}
+
+.btn button:hover {
+    opacity: 0.8;
+}
+
+.flex a:hover {
+    opacity: 0.4;
+}
+
+    /* Main */
+
+/* Hero */
+video {
+    width: 100%;
+    position: relative;
+}
+
+.nodwin {
+    position: absolute;
+    top: 200;
+    left: 100;
+}
+
+.nodwin img {
+    width: 8vw;
+}
+
+.nodwin h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 900;
+    margin-top: 2rem;
+}
+
+.nodwin h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.nodwin button {
+    padding: .7rem 3rem;
+    border-radius: 6rem;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(55, 178, 202);
+}
+
+.nodwin button:hover {
+    opacity: 0.8;
+}
+
+/* sidebar */
+.main_box {
+    position: absolute;
+    position: fixed;
+    top: 0;
+}
+
+.main_box .sidebar_menu {
+    width: 70px;
+    height: 100vh;
+    background-color: rgb(27, 33, 44);
+}
+
+.sidebar_menu .menu li {
+    margin-top: 6px;
+    padding: 10px 20px;
+}
+
+.sidebar_menu .menu i {
+    color: rgb(55, 178, 202);
+    font-size: 2rem;
+}
+
+.menu ul li a:hover {
+    opacity: 0.4;
+}
+
+/* Featured ladders */
+.bg-color {
+    background-color: black;
+}
+
+.bg-color h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+.bg-color img {
+    width: 27vw;
+    border-radius: 10px;
+}
+
+.bg-color img:hover {
+    opacity: 0.5;
+}
+
+.icons {
+    background-color: rgb(88, 102, 242);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -2rem;
+    margin-right: 0.5rem;
+}
+
+.ends h4,
+p {
+    color: rgb(172, 178, 195);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.ends h5 {
+    color: #fff;
+    font-weight: 600;
+    margin-top: 0.2rem;
+    cursor: pointer;
+}
+
+.ends h5:hover {
+    color: rgb(55, 178, 202);
+}
+
+.line {
+    height: 1vh;
+    width: 20vw;
+    background-color: rgb(54, 65, 88);
+    border-radius: 1rem;
+}
+
+.line-2 {
+    height: 1vh;
+    width: 15vw;
+    background-color: rgb(55, 178, 202);
+    margin-top: 1.5rem;
+}
+
+/* Browse games */
+.view {
+    color: rgb(55, 178, 202);
+}
+
+.img-2 img {
+    width: 14vw;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.img-2 img:hover {
+    transform: scale(1.1);
+}
+
+.img-2 p {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 1.2rem;
+    cursor: pointer;
+}
+
+.img-2 p:hover {
+    color: rgb(55, 178, 202);
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Popular tournaments */
+.img-3 img {
+    width: 20vw;
+    margin: 0.5rem;
+}
+
+.icon img {
+    width: 3vw;
+    margin-top: -3rem;
+}
+
+.cup {
+    margin-right: 3.5rem;
+}
+
+.cup p {
+    margin-bottom: 2rem;
+}
+
+/* Popular ladders */
+.ladder img {
+    width: 20vw;
+    padding: 0.5rem;
+}
+
+.one {
+    width: 15vw;
+}
+
+.two {
+    width: 12vw;
+}
+
+/* Popular Spaces */
+.pop-img img {
+    border-radius: 50%;
+    height: 28vh;
+}
+
+.pop-img p {
+    margin-left: 1.8rem;
+    margin-bottom: .5rem;
+}
+
+.pop-img span {
+    color: rgb(146, 143, 143);
+    margin-left: 2.5rem;
+}
+
+/* create Space */
+.create-btn {
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 6rem;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: #fff;
+}
+
+.create-box p {
+    font-size: 1rem;
+    word-spacing: 1.5px;
+}
+
+.sub-img img {
+    height: 32vh;
+    width: 35vw;
+    margin-top: 5rem;
+
+}
+
+/* Popular marketplace */
+.star {
+    color: aqua;
+    font-size: 1.5rem;
+    margin-top: -2rem;
+}
+
+/* marketplace listing */
+.create-box {
+    margin-left: 2rem;
+}
+
+/* Tournaments with large prizes */
+.subs-btn {
+    background-color: rgb(39, 47, 63);
+    color: rgb(145, 152, 169);
+    border: none;
+    border-radius: 2rem;
+    margin-top: -1.5rem;
+}
+hr{
+    width: 100%;
+    height: 0.5px;
+    margin-bottom: 5rem;
+}
